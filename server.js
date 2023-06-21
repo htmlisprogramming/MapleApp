@@ -55,7 +55,7 @@ MongoClient.connect(dburl, (err, client)=>{
         console.log(`전체랭킹 ${result.info.totalrank}`)
         console.log(`길드원수 ${result.info.numbers}`)
         console.log(`길드포인트 ${result.info.point}`)
-        console.log(`${result.masters.length}개의 간부 리스트 로딩`)
+        console.log(`${result.masters.length}개의 관리자 리스트 로딩`)
         console.log(`${result.members.length}개의 멤버 리스트 로딩`)
         console.log("데이터 로딩 성공.")
         
