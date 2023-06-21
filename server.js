@@ -165,11 +165,11 @@ passport.use(new LocalStrategy({
     },(inputid, inputpw, done) => {
         db.collection('Accounts').findOne({ id: inputid }, (err, result)=>{
         if (err) return done(err)
-        if (!result) return done(null, false, { message: '존재하지않는 아이디요' })
+        if (!result) return done(null, false, { message: 'id does not exist' })
         if (inputpw == result.pw) {
             return done(null, result)
         } else {
-            return done(null, false, { message: '비번틀렸어요' })
+            return done(null, false, { message: 'wrong password' })
         }
         })
 }));
