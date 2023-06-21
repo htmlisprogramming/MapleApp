@@ -1,7 +1,7 @@
 .env
 node_modules
 config
-ex01
-test
-test2
-project
+ex01.js
+test.js
+test2.js
+project.md
