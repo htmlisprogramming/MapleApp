@@ -1,0 +1,59 @@
+[
+    {"name":null , "chance":0},
+    {   "name":"리스트레인트 링",
+        "chance":348837,
+        "id" : "restraint"
+    },
+    {   "name":"웨폰퍼프 링",
+        "chance":348837,
+        "id" : "weaponJump"
+    },
+    {   "name":"얼티메이덤 링",
+        "chance":348837,
+        "id" : "ultimatum"
+    },
+    {   "name":"리스크테이커 링",
+        "chance":348837,
+        "id" : "riskTaker"
+    },
+    {   "name":"링 오브 썸",
+        "chance":581395,
+        "id" : "totalling"
+    },
+    {   "name":"크리데미지 링",
+        "chance":581395,
+        "id" : "criticalDamage"
+    },
+    {   "name":"크라이시스 HM 링",
+        "chance":581395,
+        "id" : "crisisHM"
+    },
+    {   "name":"타워인핸스 링",
+        "chance":581395,
+        "id" : "towerBoost"
+    },
+    {   "name":"버든리프트 링",
+        "chance":581395,
+        "id" : "cleansing"
+    },
+    {   "name":"오버패스 링",
+        "chance":581395,
+        "id" : "overDrive"
+    },
+    {   "name":"레벨퍼프 링",
+        "chance":581395,
+        "id" : "levelJump"
+    },
+    {   "name":"헬스컷 링",
+        "chance":581395,
+        "id" : "healthCut"
+    },
+    {   "name":"크리디펜스 링",
+        "chance":581395,
+        "id" : "criticalDefense"
+    },
+    {   "name":"리밋 링",
+        "chance":581395,
+        "id" : "limit"
+    }
+]

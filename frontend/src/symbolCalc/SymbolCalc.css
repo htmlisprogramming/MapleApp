@@ -1,0 +1,244 @@
+.symbolCalc_div{
+    display: inline-block;
+    /* width:200px; */
+    margin: 5px;
+    /* height: 51px; */
+    /* background-color: red; */
+}
+.symbolCalc_icon{
+    width:64px;
+    height:64px;
+    /* border: 1px solid #aaa; */
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    border-radius: 5px;
+    margin: 3px 3px;
+}
+
+.symbolCalc_icon.disabled{
+    filter:grayscale();
+}
+.symbolCalc_input.disabled{
+    /* value */
+    background-color: rgba(255,255,255,0);
+    color:#bbb;
+    width : 62px;
+    border: 1px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    line-height:18px;
+    /* display: none; */
+}
+.symbolCalc_input::placeholder{
+    color:#bbb;
+}
+
+
+.symbolCalc_input{
+    display: block;
+    font-family: 'NEXON Lv1 Gothic';
+    text-align: center;
+    font-size: 14px;
+    width : 64px;
+    line-height:20px;
+    margin:4px 3px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #aaa;
+    /* background: none; */
+    background-color: rgba(255,255,255,0.5);
+    /* background-color: red; */
+}
+
+.symbolCalc_mission_div{
+    display:inline-block;
+    width:200px;
+    height:38px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 8px 8px 28px 8px;
+}
+
+.symbolCalc_mission{
+    display: block;
+    float:left;
+    width:30px;
+    height:30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+    margin:4px;
+}
+.symbolCalc_mission_div input[type="checkbox"]{
+    display: block;
+    float:left;
+    margin: 11px;
+}
+.symbolCalc_mission.disabled{
+    filter:grayscale();
+}
+.symbolCalc_mission_description{
+    display: block;
+    float:left;
+    width:140px;
+    /* background-color: red; */
+    height:30px;
+    line-height: 30px;
+    font-size:12px;
+    color:#888;
+    margin:4px 0;
+}
+.symbolCalc_mission_description.disabled{
+    color:#bbb
+}
+
+.symbolCalc_option{
+    display: inline-block;
+    border-radius: 5px;
+    max-width:70px;
+    min-width:43px;
+    width : calc(30% - 1px);
+    height:30px;
+    margin:6px 3px;
+    border-bottom: 2px solid #aaa;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.symbolCalc_option:hover , .symbolCalc_option.selected{
+    border-bottom: 2px solid #c46822;
+    background-color: #ff9b4f ;
+
+    transition: 0.4s;
+}
+.symbolCalc_option:hover span , .symbolCalc_option.selected span{
+    color:#eee;
+}
+
+.symbolCalc_option span{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.symbolCalc_result{
+    /* width: calc(100% - 120px); */
+    min-height: 90px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: 1px solid #aaa;
+    background-color: rgba(255,255,255,0.5);
+    color:#888;
+    font-size:13px;
+}
+.symbolCalc_result span{
+    display: inline-block;
+    padding:0 5px;
+}
+.symbolCalc_result span.info{
+    font-size:10px;
+    color:#aaa;
+}
+.symbolCalc_result span.alert{
+    color:#c46b6b;
+}
+.symbolCalc_result span.region{
+    width:58px;
+    margin: 0 5px 0 0;
+    text-align: center;
+    border-radius: 10px;
+    font-size:13px;
+    color:#eee;
+}
+.symbolCalc_result span.region.여로{
+    background-color: rgb(106, 184, 201);
+}
+.symbolCalc_result span.region.츄츄{
+    background-color: #e27e9c;
+}
+.symbolCalc_result span.region.레헬른{
+    background-color: #b56cc7;
+}
+.symbolCalc_result span.region.아르카나{
+    background-color: #92a7b6;
+}
+.symbolCalc_result span.region.모라스{
+    background-color: #d64141;
+}
+.symbolCalc_result span.region.에스페라{
+    background-color: #8fa3d5;
+}
+.symbolCalc_result span.region.세르니움{
+    background-color: #92a7b6;
+}
+.symbolCalc_result span.region.아르크스{
+    background-color: #af9d6e;
+}
+.symbolCalc_result span.region.오디움{
+    background-color: #bcc569;
+}
+.symbolCalc_result div{
+    margin:2px 0;
+}
+
+
+.symbolCalc_icon.vj {background-image: url("../../public/assets/item/item_symbol_vj.png");}
+.symbolCalc_icon.ccisland {background-image: url("../../public/assets/item/item_symbol_ccisland.png");}
+.symbolCalc_icon.lachelein {background-image: url("../../public/assets/item/item_symbol_lachelein.png");}
+.symbolCalc_icon.arcana {background-image: url("../../public/assets/item/item_symbol_arcana.png");}
+.symbolCalc_icon.morass {background-image: url("../../public/assets/item/item_symbol_morass.png");}
+.symbolCalc_icon.esfera {background-image: url("../../public/assets/item/item_symbol_esfera.png");}
+
+.symbolCalc_mission.vj {background-image: url("../../public/assets/icon/icon_region_vj.png");}
+.symbolCalc_mission.ccisland {background-image: url("../../public/assets/icon/icon_region_ccisland.png");}
+.symbolCalc_mission.lachelein {background-image: url("../../public/assets/icon/icon_region_lachelein.png");}
+.symbolCalc_mission.arcana {background-image: url("../../public/assets/icon/icon_region_arcana.png");}
+.symbolCalc_mission.morass {background-image: url("../../public/assets/icon/icon_region_morass.png");}
+.symbolCalc_mission.esfera {background-image: url("../../public/assets/icon/icon_region_esfera.png");}
+
+.symbolCalc_icon.cernium {background-image: url("../../public/assets/item/item_symbol_cernium.png");}
+.symbolCalc_icon.arcus {background-image: url("../../public/assets/item/item_symbol_arcus.png");}
+.symbolCalc_icon.odium {background-image: url("../../public/assets/item/item_symbol_odium.png");}
+
+
+@media ( max-width: 650px ){
+    .symbolCalc_div{
+        width:100%;
+        margin: 5px auto;
+    }
+    .symbolCalc_icon{
+        float: left;
+        width:33px;
+        height:33px;
+        background-size : 39px;
+        background-color: rgba(255,255,255,0);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        margin: 6px;
+    }
+    .symbolCalc_mission_div{
+        width:140px;
+    }
+    .symbolCalc_mission_description{
+        width:100px;
+        font-size:11px;
+    }
+    .number.disabled{
+        width:calc(33% - 19px );
+        max-width: 118px;
+        line-height:22px;
+    }
+    
+    
+    .symbolCalc_input{
+        display: inline-block;
+        font-size: 11px;
+        width:calc(33% - 17px );
+        max-width: 120px;
+        line-height:24px;
+        margin:10px 1px;
+    }
+} 

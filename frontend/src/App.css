@@ -1,0 +1,433 @@
+*{margin:0; padding:0;}
+.App{
+  min-height:560px;
+  min-width: 280px;
+}
+#header{
+    width:100%;
+    margin:auto;
+    position: fixed;
+    z-index: 910;
+    height:50px;
+    background-color: #222;
+  } 
+#nav_title{
+  width:210px;
+  height:45px;
+  float:left;
+  padding:5px 0 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+#nav_idInfo{
+  /* width:100px; */
+  height:50px;
+  line-height: 50px;
+  /* margin:0 5px 0 0; */
+  display: block;
+  /* float:left; */
+  text-align: left;
+  /* background-color: red; */
+  color:#999;
+  font-size:12px;
+  font-family: 'NanumBarunpen';
+}
+.nav_menu{
+  display: block;
+  width:100%;
+  height:40px;
+  padding: 5px 0;
+  cursor: pointer;
+  /* background-color: #ddd; */
+}
+.displayNone{
+  display:none !important;
+}
+.nav_menu:first-child{
+  margin-top:20px;
+}
+#nav_title span{
+    font-family: 'NEXON Lv1 Gothic';
+    font-weight: bold;
+    display: block;
+    font-size:20px;
+    color:#fff;
+    line-height: 40px;
+}
+
+#navbar{
+  position:fixed;
+  z-index: 900;
+  height: calc(100% - 50px);
+  top: 50px;
+  transition: 0.4s;
+}
+
+#navbar2{
+  position:fixed;
+  z-index: 800;
+  height: 5000px;
+  top: 0px;
+  transition: 0.4s;
+  background-color: #333;
+}
+
+.nav_menu span{
+    font-family: 'NEXON Lv2 Gothic';
+    display: block;
+    /* float:left; */
+    font-size:15px;
+    text-align: left;
+    height:40px;
+    border-radius: 5px;
+    line-height:40px;
+    color:#ddd;
+    overflow: hidden;
+
+}
+.icon {
+    display: block;
+    float:left;
+    width:40px;
+    height:40px;
+    margin:0 5px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size : 25px;
+    background-position: center;
+    /* border: 1px solid #fff; */
+}
+.logo{
+    background-image: url("../public/assets/icon/icon_maple.svg");
+    background-color: #eee;
+    width:36px;
+    height:36px;
+    margin:2px 7px;
+    border-radius: 37px;
+    background-size : 27px;
+}
+.steam { background-image: url("../public/assets/icon/icon_steam.svg"); background-size : 28px; }
+.star { background-image: url("../public/assets/icon/icon_star.svg"); background-size : 28px; }
+.crystal { background-image: url("../public/assets/icon/icon_crystal.svg"); }
+.ring { background-image: url("../public/assets/icon/icon_ring.svg"); }
+.rebirthflame { background-image: url("../public/assets/icon/icon_rebirthflame.svg"); }
+.defense { background-image: url("../public/assets/icon/icon_defense.svg"); }
+.equipment { background-image: url("../public/assets/icon/icon_equipment.svg"); background-size: 29px; }
+.symbol { background-image: url("../public/assets/icon/icon_symbol.svg"); background-size: 28px; }
+.nav_menu:hover { background-color:rgba(0, 0, 0, 0.5); transition:0.5s; }
+.nav_menu:hover span { color:#e2ce9d }
+.nav_menu:hover .steam{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_steam.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .star{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_star.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .crystal{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_crystal.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .ring{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_ring.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .rebirthflame{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_rebirthflames.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .defense{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_defense.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .equipment{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_equipment.svg");
+    transition:0.5s;
+}
+.nav_menu:hover .symbol{
+    background-color:#444;
+    background-image: url("../public/assets/icon/icon_h_symbol.svg");
+    transition:0.5s;
+}
+
+#copyright img{
+  margin:15px;
+  display:block;
+  float:left;
+  width:20px;
+}
+
+#copyright{
+  width:100%;
+  height:55px;
+  position:absolute;
+  bottom:0;
+}
+
+#copyright span{
+  display: block;
+  overflow: hidden;
+  margin-top:11px;
+  font-size:11px;
+  text-align: left;
+  height:55px;
+  border-radius: 5px;
+  color:#999;
+  white-space: nowrap;
+}
+#main{
+  position: relative;
+  text-align: center;
+}
+  
+#content{
+  text-align:left;
+  margin:auto;
+  min-height:100%;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.fadetrue{
+  transition:1s;
+  opacity: 1;
+}
+.fadefalse{
+  transition:0s;
+  opacity: 0;
+}
+.noDrag{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+html::-webkit-scrollbar {
+  width:20px;
+  display: none;
+}
+
+.modalBg{
+  position: fixed;
+  height:100%;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  z-index: 400;
+  transition:0.4s;
+  
+  width: calc(100%);
+  top:0;
+  left:0;
+}
+
+.modal{
+  position: absolute;
+  max-width:600px;
+  background-color: #eee;
+  border-radius: 5px;
+  top:50%;
+  left:50%;
+  width:calc(100% - 80px);
+  transform: translate(-50%, -50%);
+  padding:10px;
+  
+}
+
+.LoginRequired{
+  margin-top: 150px;
+  /* background-color: red; */
+}
+
+.LoginRequired *{
+  font-family: 'NEXON Lv1 Gothic';
+
+  display: block;
+  margin:auto;
+  text-align: center;
+}
+
+.LoginRequired span:nth-child(1){
+  font-family: 'MaplestoryOTFBold';
+  color:#888;
+  font-weight: bold;
+  font-size:35px;
+  margin: 20px auto;
+}
+
+.LoginRequired span:nth-child(3){
+  color:#aaa;
+  font-size:15px;
+  margin: 20px auto;
+}
+.LoginRequired span:nth-child(7){
+  color:#ff8787;
+  font-size:13px;
+  margin: 20px auto;
+}
+
+.LoginRequired input{
+  color:#aaa;
+  margin: 20px auto;
+  width:200px;
+  height:20px;
+  font-size:17px;
+  border: none;
+  /* border-radius: 5px; */
+  background-color: rgba(0, 0, 0, 0.05);
+  background:none;
+  border-bottom: 1px solid #888;
+  outline: none;
+}
+
+.LoginRequired input:focus{
+  transition: 0.4s;
+  border-bottom: 1px solid #f4842f;
+}
+.LoginRequired div{
+  border-radius: 5px;
+  color:#fff;
+  margin: 20px auto;
+  line-height:30px;
+  height:30px;
+  width:200px;
+  background-color: #bbb;
+  cursor: pointer;
+}
+.LoginRequired div:hover{
+  transition: 0.4s;
+  border-radius: 5px;
+  color:#fff;
+  margin: 10px auto;
+  line-height:30px;
+  height:30px;
+  background-color: #f4842f;
+}
+
+[type="checkbox"] {
+  vertical-align: middle;
+  appearance: none;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: 0.1s;
+}
+
+[type="checkbox"]:checked {
+  border: 4px solid rgb(255, 148, 71);
+}
+
+[type="checkbox"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) dotted tomato;
+}
+
+[type="checkbox"]:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+  cursor: pointer;
+}
+
+[type="checkbox"]:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+[type="checkbox"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* ===== desktop ===== */
+@media ( min-width: 1200px ){  
+    #navbar,#navbar2{
+      width:210px;
+    }
+    #content{
+      padding: 10px 20px;
+    }
+    #main{
+      width: calc( 100% - 210px );
+      left:210px;
+      top:50px;
+    }
+    .modal{
+      margin-left : 105px;
+    }
+  }
+  /* ===== mobile ===== */
+@media ( max-width: 1200px ){
+    #navbar, #navbar2{
+      width:50px;
+    }
+    #navbar:hover{
+      transition: 0.4s;
+      width:210px;
+    }
+    #navbar:hover ~ #navbar2{
+      /* background-color: rgba(0,0,0,0.6); */
+      background-color: #333;
+      box-shadow: 5px 0 25px rgba(0, 0, 0, 0.2);
+      /* backdrop-filter: blur(4px); */
+      transition: 0.4s;
+      width:210px;
+    }
+    #navbar:hover span{display: block;}
+    #content{
+      padding: 10px 10px;
+    }
+    #main{
+      width:calc( 100% - 50px );
+      left:50px;
+      top:50px;
+    }
+    .modal{
+      margin-left : 25px;
+    }
+}
+@media ( max-width: 650px ){
+  .LoginRequired{
+    margin-top: 150px;
+  }
+  
+  .LoginRequired span:nth-child(1){
+    font-size:20px;
+    margin: 10px auto;
+  }
+  
+  .LoginRequired span:nth-child(3){
+    font-size:12px;
+    margin: 10px auto;
+  }
+  
+  .LoginRequired input{
+    width:150px;
+    margin: 10px auto;
+    height:20px;
+    border-bottom: 1px solid #888;
+  }
+  
+  .LoginRequired div{
+    margin: 10px auto;
+    line-height:30px;
+    height:30px;
+    width:152px;
+  }
+
+  .LoginRequired span:nth-child(7){
+    font-size:10px;
+    margin: 10px auto;
+  }
+}

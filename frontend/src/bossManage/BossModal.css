@@ -1,0 +1,166 @@
+.bossManage .modal > div:nth-child(2){
+    margin: 15px 0;
+}
+
+.boss_charName{
+}
+
+.modal_charInfo img{
+    width:70px;
+    /* height:90px; */
+    /* background-color: #ddd; */
+    /* border-radius: 5px; */
+}
+.modal_charInfo div{
+    display: inline-block;
+}
+.modal_charInfo div span{
+    display: block;
+    font-family: 'NEXON Lv1 Gothic';
+    font-size:14px;
+}
+.modal_charInfo div span:nth-child( n+2 ){
+    font-size: 11px;
+    color:#999;
+}
+.bossManage .modal input{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'NEXON Lv1 Gothic';
+    text-align:left;
+    padding-left: 5px;
+    font-size: 15px;
+    max-width:150px; 
+    width:calc(100% - 33px);
+    line-height:20px;
+    margin:5px 0px;
+}
+
+.boss_iconContainer{
+    display: inline-block;
+    margin: 3px 2px 0 0;
+}
+
+.boss_icon{
+    display:block;
+    float:left;
+    margin:0 2px 0 0;
+    width:28px;
+    height:28px;
+    background-size:cover;
+    border-radius: 5px;
+}
+
+.boss_tag{
+    display: block;
+    float:left;
+    margin:5px 2px;
+    /* width:40px; */
+    height:18px;
+    border-radius: 5px;
+    line-height: 14px;
+    font-size:10px;
+    text-align: center;
+    font-weight:bold;
+    color:#fff;
+}
+
+.pointer{ cursor: pointer; }
+.boss_tag:nth-child(2) { width:20px; }
+.boss_tag:nth-child(3) { width:40px; }
+
+.boss_icon.zakum{ background-image:url("../../public/assets/boss/zakum_on.png"); }
+.boss_icon.hilla{ background-image:url("../../public/assets/boss/hilla_on.png"); }
+.boss_icon.pinkbean{ background-image:url("../../public/assets/boss/pinkbean_on.png"); }
+.boss_icon.cygnus{ background-image:url("../../public/assets/boss/cygnus_on.png"); }
+.boss_icon.pierre{ background-image:url("../../public/assets/boss/pierre_on.png"); }
+.boss_icon.vonbon{ background-image:url("../../public/assets/boss/vonbon_on.png"); }
+.boss_icon.crimsonqueen{ background-image:url("../../public/assets/boss/crimsonqueen_on.png"); }
+.boss_icon.vellum{ background-image:url("../../public/assets/boss/vellum_on.png"); }
+.boss_icon.magnus{ background-image:url("../../public/assets/boss/magnus_on.png"); }
+.boss_icon.papulatus{ background-image:url("../../public/assets/boss/papulatus_on.png"); }
+.boss_icon.lotus{ background-image:url("../../public/assets/boss/lotus_on.png"); }
+.boss_icon.damien{ background-image:url("../../public/assets/boss/damien_on.png"); }
+.boss_icon.slime{ background-image:url("../../public/assets/boss/slime_on.png"); }
+.boss_icon.lucid{ background-image:url("../../public/assets/boss/lucid_on.png"); }
+.boss_icon.will{ background-image:url("../../public/assets/boss/will_on.png"); }
+.boss_icon.dusk{ background-image:url("../../public/assets/boss/dusk_on.png"); }
+.boss_icon.darknell{ background-image:url("../../public/assets/boss/darknell_on.png"); }
+.boss_icon.verushilla{ background-image:url("../../public/assets/boss/verushilla_on.png"); }
+.boss_icon.seren{ background-image:url("../../public/assets/boss/seren_on.png"); }
+.boss_icon.kalos{ background-image:url("../../public/assets/boss/kalos_on.png"); }
+.boss_icon.kaling{ background-image:url("../../public/assets/boss/kaling_on.png"); }
+.boss_tag.p1{ background: #ff5d5d; }
+.boss_tag.p2{ background: #479dff; }
+.boss_tag.p3{ background: #78ccac; }
+.boss_tag.p4{ background: #f1ae1c; }
+.boss_tag.p5{ background: #c876ff; }
+.boss_tag.p6{ background: #929292; }
+.boss_tag.Extreme{ background:#777; color:#ffd900;}
+.boss_tag.Hard{ background: #ff5d5d; }
+.boss_tag.Chaos{ background: #ff5d5d; }
+.boss_tag.Normal{ background: #479dff; }
+.boss_tag.Easy{ background: #78ccac; }
+
+.boss_icon.off{ 
+    filter: saturate(0);
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: overlay; 
+}
+.boss_icon.none{ 
+    filter: saturate(0.5);
+    background-color: #ff5d5d;
+    background-blend-mode: overlay; 
+    /* background-blend-mode: multiply;  */
+}
+.boss_tag.off{
+    /* color:#ccc; */
+    background-color: #ccc;
+}
+.boss_tag.none{
+    color:#ff5d5d;
+    background-color: #ff5d5d;
+    opacity: 0.2;
+}
+
+.boss_btnContainer{
+    text-align: right;
+}
+.boss_btnContainer > div{
+    display: inline-block;
+    font-family: 'NEXON Lv1 Gothic';
+    background-color: red;
+    width: 50px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 5px;
+    margin:3px;
+    color: #fff;
+    cursor:pointer;
+}
+.boss_btnContainer > div:nth-child(1){
+    border-bottom: 2px solid #999;
+    background-color: #ccc;
+    
+}
+.boss_btnContainer > div:nth-child(2){
+    border-bottom: 2px solid #4680a6;
+    background-color: #3a98d7;
+}
+.boss_deleteBtn{
+    width:17px;
+    height:17px;
+    margin: 5px;
+    display: block;
+    float:right;
+    cursor:pointer;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url("../../public/assets/icon/icon_delete.svg");
+}

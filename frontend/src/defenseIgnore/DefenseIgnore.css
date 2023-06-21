@@ -1,0 +1,108 @@
+.defense_input{
+    display: inline-block;
+    font-family: 'NEXON Lv1 Gothic';
+    text-align:left;
+    padding-left: 10px;
+    font-size: 17px;
+    width:150px;
+    line-height:30px;
+    margin:5px 0px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #aaa;
+    /* background: none; */
+    background-color: rgba(255,255,255,0.5);
+    display:block;
+    /* background-color: red; */
+}
+.defense_input.text{
+    width:70%;
+    min-width: 150px;
+}
+.defense_input:hover{
+    line-height:28px;
+    margin:5px 0px;
+    border:1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+.defense_input.text:hover{
+    width:calc(70% - 2px);
+}
+.defense_input.number:hover{
+    width:148px;
+}
+.defense_plusBtn{
+    display:inline-block;
+    font-size:10px;
+    text-align: center;
+    line-height: 20px;
+    margin:10px 5px 10px 0px;
+    background-color: rgba(255,255,255,0.5);
+    width:50px;
+    border-radius: 5px;
+    border-bottom: 1px solid #aaa ;
+    color:#666;
+    cursor: pointer;
+}
+.defense_plusBtn:hover{
+    width:48px;
+    margin:9px 5px 9px 0px;
+    border:1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+#defense_dmg_frame{
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 136px;
+    min-width:160px;
+    max-width:460px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+#defense_dmg_img{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    display:block;
+    width:120px;
+    margin: 0px auto;
+    opacity: 0.6;
+    z-index: 21;
+}
+#defense_dmg_graph{
+    border-radius: 0px 0px 9px 9px;
+    display:block;
+    position:absolute; 
+    bottom:0; left:0; right:0; margin: auto;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    z-index: 20;
+    transition:1s;
+}
+#defense_dmg_graph.enough{
+    background-color: rgba(218, 35, 35, 0.45) ;
+}
+.defense_dmg_rate{
+    text-align: center;
+    display:block;
+    position:absolute; 
+    bottom:0; left:0; right:0; margin: auto;
+    height:30px;
+    color: #fff;
+    text-shadow:2px 2px 3px  rgb(7, 7, 7);
+    font-size:15px;
+    line-height: 25px;
+    position: absolute;
+    z-index: 22;
+}
+#velum{
+    display: block;
+    float:right;
+    width:150px;
+    margin: 0;
+    opacity: 0.7;
+}

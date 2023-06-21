@@ -1,0 +1,53 @@
+.info_charSlot{
+    display: inline-block;
+    margin : 10px 5px;
+    background : rgba( 0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 120px;
+    padding-bottom:5px;
+}
+.info_charSlot > div{
+    position: relative;
+    width:calc(100% - 10px);
+    height:90px;
+    overflow: hidden;
+    margin: 5px auto 0 auto;
+    /* background-color: red; */
+}
+.info_charSlot > div img{
+    position: absolute;
+    display: block;
+    /* margin:5px auto 0 auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width:calc(100% + 90px);
+    max-width: 160px;
+}
+.info_charSlot span{
+    font-family: "NanumBarunpen";
+    display: block;
+    text-align: center;
+}
+.info_charName{
+    font-weight: bold;
+    color:#444;
+    font-size: 15px;
+}
+.info_charLev{
+    font-size:12px;
+    color:#888;
+}
+
+@media ( max-width: 1940px ){.info_charSlot{width: calc(7.69% - 10px);}} 
+@media ( max-width: 1810px ){.info_charSlot{width: calc(8.3% - 10px);}} 
+@media ( max-width: 1680px ){.info_charSlot{width: calc(9% - 10px);}} 
+@media ( max-width: 1550px ){.info_charSlot{width: calc(10% - 10px);}} 
+@media ( max-width: 1420px ){.info_charSlot{width: calc(11.1% - 10px);}} 
+@media ( max-width: 1290px ){.info_charSlot{width: calc(12.5% - 10px);}} 
+@media ( max-width: 1160px ){.info_charSlot{width: calc(14.2% - 10px);}} 
+@media ( max-width: 1030px ){.info_charSlot{width: calc(16.6% - 10px);}} 
+@media ( max-width: 900px ){.info_charSlot{width: calc(20% - 10px);}} 
+@media ( max-width: 770px ){.info_charSlot{width: calc(25% - 10px);}} 
+@media ( max-width: 640px ){.info_charSlot{width: calc(33% - 10px);}} 
+@media ( max-width: 510px ){.info_charSlot{width: calc(50% - 10px);}} 

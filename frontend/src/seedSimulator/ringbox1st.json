@@ -1,0 +1,119 @@
+[
+    {"name":null , "chance":0},
+    {   "name":"리스트레인트 링",
+        "chance":490862,
+        "id" : "restraint"
+    },
+    {   "name":"웨폰퍼프 링",
+        "chance":302872,
+        "id" : "weaponJump"
+    },
+    {   "name":"얼티메이덤 링",
+        "chance":302872,
+        "id" : "ultimatum"
+    },
+    {   "name":"리스크테이커 링",
+        "chance":302872,
+        "id" : "riskTaker"
+    },
+    {   "name":"링 오브 썸",
+        "chance":185353,
+        "id" : "totalling"
+    },
+    {   "name":"크리데미지 링",
+        "chance":185353,
+        "id" : "criticalDamage"
+    },
+    {   "name":"크라이시스 HM 링",
+        "chance":185353,
+        "id" : "crisisHM"
+    },
+    {   "name":"타워인핸스 링",
+        "chance":185353,
+        "id" : "towerBoost"
+    },
+    {   "name":"버든리프트 링",
+        "chance":185353,
+        "id" : "cleansing"
+    },
+    {   "name":"오버패스 링",
+        "chance":185353,
+        "id" : "overDrive"
+    },
+    {   "name":"레벨퍼프 링",
+        "chance":185353,
+        "id" : "levelJump"
+    },
+    {   "name":"헬스컷 링",
+        "chance":185353,
+        "id" : "healthCut"
+    },
+    {   "name":"크리디펜스 링",
+        "chance":185353,
+        "id" : "criticalDefense"
+    },
+    {   "name":"리밋 링",
+        "chance":185353,
+        "id" : "limit"
+    },
+    {   "name":"듀라빌리티 링",
+        "chance":162749,
+        "id" : "durability"
+    },
+    {   "name":"리커버디펜스 링",
+        "chance":162749,
+        "id" : "cleanDefense"
+    },
+    {   "name":"실드스와프 링",
+        "chance":162749,
+        "id" : "berserker"
+    },
+    {   "name":"마나컷 링",
+        "chance":162749,
+        "id" : "manaCut"
+    },
+    {   "name":"크라이시스 H 링",
+        "chance":162749,
+        "id" : "crisisH"
+    },
+    {   "name":"크라이시스 M 링",
+        "chance":162749,
+        "id" : "crisisM"
+    },
+    {   "name":"크리쉬프트 링",
+        "chance":162749,
+        "id" : "criticalShift"
+    },
+    {   "name":"스탠스쉬프트 링",
+        "chance":162749,
+        "id" : "stanceShift"
+    },
+    {   "name":"리커버스탠스 링",
+        "chance":162749,
+        "id" : "cleanStance"
+    },
+    {   "name":"스위프트 링",
+        "chance":162749,
+        "id" : "swift"
+    },
+    {   "name":"리플렉티브 링",
+        "chance":162749,
+        "id" : "reflective"
+    },
+    {   "name":"오션글로우 이어링",
+        "chance":49729,
+        "id" : "oceanGlowEarrings"
+    },
+    {   "name":"깨진 상자 조각 5개",
+        "chance":2441230,
+        "id" : "brokenBoxPiece"
+    },
+    {   "name":"시드 포인트 보따리 5개",
+        "chance":587703,
+        "id" : "ozPointPouch"
+    },
+    {   "name":"경험치 2배 쿠폰(15분) 3개",
+        "chance":723000,
+        "id" : "2xExpCoupon"
+    }
+]

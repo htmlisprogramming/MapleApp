@@ -1,0 +1,304 @@
+.page_header{
+  padding-left:40px;
+  border-bottom: 1px solid #bbb;
+}
+
+.page_title{
+  display:block;
+  font-size:25px;
+  font-family: 'MaplestoryOTFBold';
+  /* font-family: 'Nanumbarunpen'; */
+  /* font-family: 'NEXON Lv1 Gothic'; */
+  font-weight:bold;
+  color:#777;
+  line-height: 30px;
+}
+
+.page_description{
+  display:block;
+  font-family: 'NEXON Lv1 Gothic';
+  font-weight: 100;
+  font-size:13px;
+  margin: 5px 0px 0px 0px;
+  line-height: 20px;
+  color:#999;
+}
+
+.page_icon{
+  display: block;
+  float:left;
+  width:46px;
+  height:46px;
+  margin:2px 15px 0 -40px;
+  /* border-radius: 100px; */
+  background-repeat: no-repeat;
+  background-size : 35px;
+  background-position: center;
+}
+.page_container{
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'NEXON Lv1 Gothic';
+  color:#222;
+}
+
+.page_container.flex{
+  display:flex;
+}
+
+
+
+.page_div{
+  margin-bottom:30px;
+}
+
+.page_section{
+  /* float: left; */
+  background-color: rgba(0,0,0,0.07);
+  backdrop-filter: blur(2px);
+  padding:15px 20px 5px 20px;
+  color:#222;
+  text-align: left;
+  font-family: 'NEXON Lv1 Gothic';
+  margin:5px 5px;
+  border-radius: 5px;
+}
+.page_section.half{
+  width:calc(50% - 50px);
+}
+.page_section.trisect{
+  width:calc(33.3% - 50px);
+}
+.page_section.full{
+  width:calc(100% - 50px);
+}
+
+.page_section_title{
+  display:block;
+  font-size:22px;
+}
+
+.page_section_description{
+  display:block;
+  font-size:13px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  color:#777 !important;
+}
+.page_section_paragraph{
+  display:block;
+  font-size:15px;
+  margin: 10px 0;
+  line-height: 20px;
+  color:#777 !important;
+}
+.page_footer{
+  display: inline-block;
+  width:100%;
+  height:30px;
+  /* background-color: red; */
+}
+
+.ring_h { background-image: url("../public/assets/icon/icon_h_ring.svg"); }
+.steam_h { background-image: url("../public/assets/icon/icon_h_steam.svg"); background-size : 40px; }
+.crystal_h { background-image: url("../public/assets/icon/icon_h_crystal.svg"); }
+.rebirthflame_h { background-image: url("../public/assets/icon/icon_h_rebirthflames.svg"); }
+.equipment_h { background-image: url("../public/assets/icon/icon_h_equipment.svg"); }
+.star_h { background-image: url("../public/assets/icon/icon_h_star.svg"); }
+.defense_h { background-image: url("../public/assets/icon/icon_h_defense.svg"); }
+.symbol_h { background-image: url("../public/assets/icon/icon_h_symbol.svg"); }
+
+video.page_animation{
+  position: fixed;
+  z-index:-200;
+  opacity: 0.08;
+  height:calc(100vh - 50px);
+  top:50px;
+  right:0px;
+  /* filter: blur(0px); */
+}
+img.page_animation{
+  position: fixed;
+  z-index:-210;
+  opacity: 0.08;
+  height:calc(100vh - 50px);
+  top:50px;
+  right:0px;
+  /* filter: blur(0px); */
+}
+
+#adele{
+  height:calc(90vh - 50px);
+  top:170px;
+  right:-240px;
+}
+
+#angelicBuster{
+  height:calc(75vh - 50px);
+  top:150px;
+  right:-140px;
+}
+
+#aran{
+  top:100px;
+  right:-190px;
+}
+
+#ark{
+  height:calc(80vh - 50px);
+  top:150px;
+}
+
+#cadena{
+  height:calc(75vh - 50px);
+  top:160px;
+  right:-100px;
+}
+
+#cannonShooter{
+  top:150px;
+  height:calc(75vh - 50px);
+  right:-200px;
+}
+
+#cygnusKnights{
+  top:100px;
+  height:calc(85vh - 50px);
+  right:-150px;
+}
+
+#dualBlade{
+  top:130px;
+  height:calc(80vh - 50px);
+  right:-120px;
+}
+
+#evan{
+  top:150px;
+  height:calc(78vh - 50px);
+  right:-95px;
+}
+
+#hoyoung{
+  top:50px;
+  height:calc(93vh - 50px);
+  right:-150px;
+}
+
+#illium{
+  top:-50px;
+  height:calc(110vh - 50px);
+  right:-500px;
+}
+
+#kain{
+  top:20px;
+  height:calc(90vh - 50px);
+  right:-190px;
+}
+
+#kaiser{
+  top:150px;
+  height:calc(78vh - 50px);
+  right:-400px;
+}
+
+#kinesis{
+  top:150px;
+  height:calc(75vh - 50px);
+  right:-150px;
+}
+
+#lara{
+  top:165px;
+  height:calc(75vh - 50px);
+  right:-130px;
+}
+
+#luminous{
+  top:130px;
+  height:calc(90vh - 50px);
+  right:-220px;
+}
+
+#mercedes{
+  top:150px;
+  height:calc(85vh - 50px);
+  right:-150px;
+}
+
+#mihile{
+  top:0px;
+  height:calc(95vh - 50px);
+  right:-250px;
+}
+
+#pathfinder{
+  top:170px;
+  height:calc(80vh - 50px);
+  right:-415px;
+}
+
+#phantom{
+  top:170px;
+  height:calc(75vh - 50px);
+  right:-240px;
+}
+
+#resistance{
+  top:130px;
+  height:calc(80vh - 50px);
+  right:-90px;
+}
+
+#shade{
+  top:165px;
+  height:calc(75vh - 50px);
+  right:-170px;
+}
+
+#zero{
+  top:165px;
+  height:calc(75vh - 50px);
+  right:-170px;
+}
+
+/* ===== desktop ===== */
+@media ( min-width: 1200px ){  
+
+}
+/* ===== mobile ===== */
+@media ( max-width: 420px ){
+  .page_title{
+    font-size:18px;
+    margin-bottom:10px;
+    /* height:40px; */
+  }
+  .page_description{
+    display: none;
+  }
+  .page_icon{
+    width:30px;
+    height:30px;
+    background-size : 26px;
+  }
+  .page_container.flex.trisect{
+      display:block !important;
+  }
+  .page_section.trisect{
+      width:calc(100% - 50px);
+  }
+} 
+
+@media ( max-width: 650px ){
+  .page_animation{
+    /* display: none; */
+  }
+  .page_container.flex.half{
+      display:block !important;
+  }
+  .page_section.half{
+      width:calc(100% - 50px);
+      height: auto;
+  }
+} 

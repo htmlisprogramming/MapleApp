@@ -1,0 +1,277 @@
+.boss_charSlot{
+    border:1px solid red;
+    /* background-color: red; */
+    padding: 10px 0;
+}
+
+.boss_charImg img{
+    display: block;
+    width:80px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.07);
+    border: 5px solid rgba(0,0,0,0);
+}
+
+.boss_charImg{
+    padding: 5px;
+    /* background-color: red; */
+}
+
+.boss_charInfo{
+    padding: 5px;
+    color:#333;
+}
+.boss_charInfo img{
+    margin: 5px auto;
+    display: none;
+}
+.boss_charInfo span:nth-child( n + 3 ){
+    font-size:12px;
+    color:#999;
+}
+.boss_clearRate.cleared{
+    color:rgb(41, 184, 120);
+}
+.boss_clearRate{
+    color:rgb(235, 117, 44);
+}
+.boss_clearRate.untouched{
+    color:rgb(223, 60, 60);
+}
+.boss_charInfo span span.total{
+    display: inline;
+    font-size:13px;
+}
+
+.boss_charList span{
+    font-family: 'NEXON Lv1 Gothic';
+    display: block;
+    font-size:15px;
+}
+
+.bossManage table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.bossManage table tr > td:first-child, tr > td:first-child td{
+    text-align: left;
+}
+.bossManage > table > tbody > tr:hover{
+    transition:0.2s;
+    background-color: rgba(0,0,0,0.07);
+    backdrop-filter: blur(2px);
+}
+.bossManage > table > tbody > tr{
+    border-bottom:1px solid #ddd;
+}
+.bossManage thead{
+    border-bottom:1px solid #ddd;
+}
+.tr td:first-child{
+    width:100px;
+}
+
+.boss_clearBtn span{
+    display: block;
+    font-size:13px;
+    width:60px;
+    height:20px;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+    cursor: pointer;
+    margin:7px auto;
+    /* width:80px; */
+}
+.boss_settingBtn{
+    display: inline-block;
+    width:23px;
+    height:20px;
+    /* background-color: red; */
+    margin:10px;
+    cursor: pointer;
+    background-image: url("../../public/assets/icon/icon_setting.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boss_clearBtn span:first-child{
+    background-color: #bcbcbc;
+    color:#f3f3f3;
+    /* border: 1px solid #349acd; */ 
+    /* border-bottom: 2px solid #349acd; */
+}
+.boss_progress{
+    /* background-color: red; */
+    /* max-width:400px; */
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+.boss_progress > div{
+    /* max-width: 130px; */
+    margin:auto;
+    /* border: 1px solid blue; */
+}
+.boss_progressIcon{
+    width:40px;
+    height:30px;
+    /* background-color: red; */
+    position:relative;
+}
+.boss_progressIcon img{
+
+    display: block;
+    margin:auto;
+
+}
+.boss_progressBar{
+    background-color: #ccc;
+    width:100%;
+    /* max-width: 100%; */
+    height:12px;
+    border-radius: 10px;
+    position:relative;
+}
+
+.boss_progressRatebar{
+    transition:0.5s;
+    height:12px;
+    border-radius: 10px;
+}
+.boss_progressRatebar.char{
+    width:calc( var( --percent1 ) );
+    background-color: rgb(255, 126, 126);
+}
+.boss_progressRatebar.cryst{
+    width:calc( var( --percent2 ) );
+    background-color: rgb(118, 187, 226);
+}
+.boss_progressRatebar.meso{
+    width:calc( var( --percent3 ) );
+    background-color: rgb(241, 202, 72);
+}
+.boss_progressRate{
+    text-align: center;
+    position: absolute;
+    color:rgb(109, 109, 109);
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+    font-size:12px;
+}
+
+.boss_dDay{
+    /* border-bottom: 1px solid #aaa; */
+    position:relative;
+}
+.boss_dDay img{
+    width:10%;
+    max-width: 36px;
+    min-width: 30px;
+    left: calc( var( --percent4 ) + 7% - 18px );
+    position: relative;
+    transition:0.2s
+}
+.boss_dayProgress{
+
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.boss_dayProgress div{
+    width: calc( var( --percent4 ) + 7% );
+    height:5px;
+    border-radius: 5px;
+    background-color: #47bbd8;
+    transition:0.2s
+}
+.boss_days{
+    display: flex;
+}
+.boss_days span{
+    margin: 5px auto;
+    display: block;
+    font-size:12px;
+    color:#999;
+}
+.boss_days span.passed{
+    /* color:#88c677; */
+    /* color:#558794; */
+    /* color:#95b1b8; */
+}
+.boss_days span.today{
+    color:#47bbd8;
+}
+
+.boss_charCreate{
+    height:80px;
+    text-align: center;
+    color:#aaa;
+    cursor: pointer;
+}
+
+.boss_createBtn{
+    display: inline-block;
+    width:38px;
+    height:38px;
+    /* background-color: red; */
+    margin:10px 0 5px 0;
+    background-image: url("../../public/assets/icon/자산 43.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boss_charCreate:hover .boss_createBtn{
+    transition: 0.4s;
+    background-image: url("../../public/assets/icon/자산 45.svg");
+}
+.boss_charCreate:hover span{
+    transition: 0.4s;
+    color:#333;
+}
+
+@media ( max-width: 650px ){
+    .hdtd{
+        display: none;
+    }
+    .boss_charInfo img{
+        display: block;
+        width:100%;
+        max-width:70px;
+        min-width:50px;
+        /* border-radius: 100px; */
+        /* background-color: rgba(0,0,0,0.07); */
+    }
+    .bossManage table tr > td:first-child, tr > td:first-child td{
+        text-align: center;
+    }
+    .bossManage td{
+        width:33.33%;
+    }
+} 
+@media ( max-width: 450px ){
+    .boss_charList span{
+
+        font-size:10px;
+    }
+    .boss_charInfo span:nth-child( n + 3 ){
+        font-size:10px;
+    }
+    .boss_clearBtn span{
+        width:40px;
+        height:20px;
+        font-size:10px;
+        margin:7px auto;
+        /* width:80px; */
+    }
+    .boss_settingBtn{
+        width:15px;
+        height:15px;
+        margin:5px;
+    }
+}

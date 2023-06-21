@@ -1,0 +1,245 @@
+.seedSimulator .page_container{
+    padding-top: 30px;
+}
+.seedSimulator .page_section_title{
+    margin:10px 0 20px 0;
+}
+
+
+.seedSim_option{
+    display: inline-block; 
+    border-radius: 10px;
+    width:180px;
+    height:60px;
+    margin:6px 3px;
+    border-bottom: 2px solid #aaa;
+    background-color: rgba(0,0,0,0.07);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.seedSim_option:hover{
+    /* border: 1px solid #ff9b4f; */
+    border-bottom: 2px solid #c46822;
+    /* background-color: rgba(0,0,0,0.4); */
+    background-color: #ff9b4f ;
+    transition: 0.4s;
+}
+.seedSim_option:hover span{
+    color:#eee;
+}
+.seedSim_icon{
+    float: left;
+    width:39px;
+    height:39px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.seedSim_reward{
+    position: absolute;
+    margin:auto;
+    top:0;left:0;bottom:0;right:0;
+}
+
+.seedSim_option span{
+    display: block;
+    float:left;
+    height:40px;
+    margin:10px;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.seedSim_icon.box_1st{background-image: url("../../public/assets/item/item_box_1st.webp");}
+.seedSim_icon.box_2nd{background-image: url("../../public/assets/item/item_box_2nd.webp");}
+.seedSim_icon.box_h{background-image: url("../../public/assets/item/item_box_h.webp");}
+.seedSim_icon.box_s{background-image: url("../../public/assets/item/item_box_s.webp");}
+.seedSim_icon.restraint{background-image: url("../../public/assets/item/item_seed_restraint.webp");}
+
+.seedSim_showBox{
+    display: inline-block;
+    border-radius: 10px;
+    width:198px;
+    height:198px;
+    border: 1px solid #aaa;
+    background-color: rgba(0,0,0,0.02);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 #ffffff;
+}
+.seedSim_result{
+    position: absolute;
+    left:0; right:0;
+    font-size:15px;
+}
+.seedSim_showBox .seedSim_icon{
+    background: none;
+    margin:79px 79px 39px 79px;
+    float: unset;
+    position: relative;
+}
+
+
+.seedSim_toolTip{
+    width:(100% + 40px);
+    height:auto;
+    margin:0 -20px 0 -20px;
+    background-color: rgba(0,0,0,0.5);
+    transition:0.3s;
+    padding: 20px 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.seedSim_toolTip.false{
+    padding: 0 20px;
+    height:0px;
+    overflow: hidden;
+}
+.seedSim_toolTip span{
+    font-family: 'NEXON Lv1 Gothic';
+    font-size:13px;
+    color:#f3c478;
+
+}
+.seedSim_showBox.special{
+    border: 1px solid #ddd;
+    /* box-shadow: 2px 2px 60px #f3c478, -2px -2px 60px #f3c478; */
+    /* background-color: rgba(0,0,0,0.1); */
+    /* box-shadow: 2px 2px 30px #96fffd, -2px -2px 30px #ffa0cf; */
+    box-shadow: 2px 2px 20px #ffffff, -2px -2px 20px #ffc15e;
+
+    animation-name: special;
+    animation-duration: 2s;
+    /* animation-delay: 0.5s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition:0.5s;
+}
+
+@keyframes special{
+    0%{
+        box-shadow: 2px 2px 20px #ffffff, -2px -2px 20px #ffc15e;
+    }
+    50%{
+        box-shadow: 2px 2px 40px #ffc15e, -2px -2px 40px #ffffff;
+    }
+    100%{
+        box-shadow: 2px 2px 20px #ffffff, -2px -2px 20px #ffc15e;
+        /* box-shadow: 2px 2px 30px #f3c478, -2px -2px 30px #fff9cf; */
+    }
+}
+
+.seedSim_resultList{
+    display: block;
+    margin: auto;
+    max-width: 724px;
+    border-radius: 10px;
+    height:150px;
+    border: 1px solid #aaa;
+    background-color: rgba(0,0,0,0.02);
+    backdrop-filter: blur(10px);
+    padding:10px;
+    text-align: left;
+    font-size: 17px;
+    overflow-y: scroll;
+}
+.seedSim_resultItems{
+    display: block;
+}
+.seedSim_resultItems.special{
+    color:#f7ac34;
+    display: block;
+}
+.seedSim_resultType{
+    display: inline-block;
+    color: #fff !important;
+    width:45px;
+    height:17px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size:12px;
+    margin-right:10px;
+    text-align: center;
+    /* background-color: red; */
+}
+.seedSim_resultType.box_1st{ background-color: rgb(85, 85, 85);}
+.seedSim_resultType.box_2nd{ background-color: #f87171;}
+.seedSim_resultType.box_h{ background-color: rgb(108, 204, 108);}
+.seedSim_resultType.box_s{ background-color: rgb(139, 64, 201);}
+.seedSim_resultList::-webkit-scrollbar {
+    width: 15px;
+}
+.seedSim_resultList::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+}
+
+@media ( max-width: 821px ){
+    .seedSim_resultList{max-width: 542px; font-size: 15px; }
+    .seedSim_resultType{width : 40px; height : 15px; line-height : 17px; font-size : 10px; margin-right : 5px;}
+} 
+@media ( max-width: 633px ){.seedSim_resultList{max-width: 350px; font-size: 13px; }} 
+@media ( max-height: 800px ){.seedSim_resultList{height: 100px;}} 
+@media ( max-width: 450px ){
+    .seedSimulator .page_container{
+        padding-top: 10px;
+    }
+    .seedSimulator .page_section_title{
+        font-size:15px;
+    }
+    .seedSim_description{
+        font-size:17px;
+    }
+    .seedSim_option{
+        border-radius: 5px;
+        width:95px;
+        height:46px;
+        margin:2px 2px 0px 02px;
+    }
+    .seedSim_icon{
+        margin:2px;
+    }
+    .seedSim_option span{
+        height:40px;
+        margin:5px 2px 5px 2px;
+        font-size: 13px;
+        line-height: 40px;
+        font-family: 'NEXON Lv1 Gothic';
+        color:#222;
+    }
+    .seedSim_showBox{
+        height:98px;
+
+    }
+    .seedSim_showBox  .seedSim_icon{
+        margin:29px 79px 8px 79px;
+    }
+
+    .seedSim_showBox.special{
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 10px #f3c478, -1px -1px 10px #f3c478;
+        /* background-color: rgba(0,0,0,0.1); */
+    
+        transition:0.5s;
+    }
+    
+    .seedSim_showBox.special .seedSim_icon{
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 10px #f3c478, -1px -1px 10px #f3c478;
+    }
+
+    
+    .seedSim_result{
+        display:block;
+        height:15px;
+        margin:5px 0;
+        font-size:12px;
+        font-family: 'NEXON Lv1 Gothic';
+        color:#222;
+    }
+} 

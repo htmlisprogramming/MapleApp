@@ -1,0 +1,248 @@
+.starSimulator .page_container{
+    padding-top: 30px;
+}
+.starSim_item{
+    display: block;
+    margin:20px auto;
+    border-radius: 10px;
+    width:128px;
+    height:128px;
+    border: 1px solid #aaa;
+    background-color: rgba(0,0,0,0.02);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 #ffffff;
+    position: relative;
+}
+
+.starSim_itemImg{
+    width:45px;
+    position: absolute;
+    margin:auto;
+    top:0;left:0;bottom:0;right:0;
+}
+.starSim_itemImg.destroyed{
+    filter: saturate(0);
+    opacity: 0.3;
+}
+
+.starSim_item_stars{
+    max-width:300px;
+    display: block;
+    margin:auto;
+}
+.starSim_item_stars > div{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.starSim_item_star{
+    float:left;
+    width:13px;
+    height:13px;
+    margin:0 0.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../public/assets/icon/icon_star_off.svg");
+    opacity:0.3
+}
+
+.starSim_item_star.on{
+    background-image: url("../../public/assets/icon/icon_star_on.svg");
+    opacity: 1;
+}
+
+.plus{
+    color:#eeab00;
+}
+.destroyed{
+    color: rgb(82, 109, 171);
+}
+.star_chancetime{
+    color:#ffffff;
+    animation-name: chancetime;
+    animation-duration: 1s;
+    /* animation-delay: 0.5s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition:0.5s;
+}
+
+@keyframes chancetime{
+    0%{
+        text-shadow: 0 0 2px #eeab00;
+    }
+    50%{
+        text-shadow: 0 0 0 #ffc15e;
+        color:#eeab00;
+    }
+    100%{
+        text-shadow: 0 0 2px #eeab00;
+    }
+}
+
+.starSim_info{
+    display: inline-block;
+    margin: 10px auto;
+    /* max-width: 267px; */
+    border-radius: 5px;
+    /* border: 1px solid #aaa; */
+    /* background-color: rgba(0,0,0,0.02); */
+    backdrop-filter: blur(10px);
+    text-align: left;
+    font-size: 17px;
+}
+.starSim_toolTip{
+    width:(100% + 40px);
+    height:auto;
+    margin:20px -20px 0 -20px;
+    background-color: rgba(0,0,0,0.07);
+    transition:0.3s;
+    padding: 20px 20px;
+    text-align: center;
+    transition: 1s;
+
+}
+.starSim_toolTip > div{
+    text-align: left;
+    display: inline-block;
+    margin: 5px 0;
+    /* background-color: red; */
+}
+.starSim_toolTip > div > span{
+    margin: 2px 5px;
+}
+
+.starSim_meso{
+    display: inline-block;
+    margin:auto;
+    padding: 1px 0 1px 5px;
+    border-radius: 7px;
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+}
+.starSim_meso.total{
+    padding: 0 4px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    margin-bottom:10px;
+}
+
+.starSim_meso > span{
+    margin: 2px 5px;
+    display: block;
+    min-width: 100px;
+    float:left;
+    text-align: center;
+    height:15px;
+    line-height: 16px;
+    padding:3px 4px;
+}
+
+.starSim_meso > img{
+    display: block;
+    float:left;
+    width:20px;
+    height:20px;
+    margin:2px 0;
+}
+
+
+
+
+.starSim_option{
+    display: block;
+    margin: 5px 0;
+}
+
+.starSim_option span{
+    height:16px;
+    font-size:14px;
+    line-height: 16px;
+}
+.starSim_btn{
+    display: block;
+    margin:20px auto; 
+    width:128px;
+    height:35px;
+    font-size: 20px;
+    line-height: 35px;
+    border-radius: 7px;
+    border-bottom: 2px solid #aaa;
+    background-color: rgba(0,0,0,0.07);
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    color: #999;
+}
+
+
+.starSim_btn:hover{
+    border-bottom: 2px solid #c46822;
+    background-color: #ff9b4f ;
+    color:#eee;
+    transition: 0.4s;
+}
+
+#starSim_effect{
+    /* width: 100%; */
+    display: block;
+    position:absolute;
+    z-index: 100;
+    max-width: 900px;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    margin:auto;
+    opacity: 0.8;
+    overflow-x:hidden;
+    overflow-y:visible;
+}
+
+
+#starSim_effect div{
+    position:relative;
+}
+#starSim_effect img{
+    position:absolute;
+    display: block;
+    margin-left:-10px;
+    width:100%;
+    min-width: 600px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+@media ( max-width: 450px ){
+    .starSimulator .page_container{
+        padding-top: 10px;
+    }
+    .starSimulator .page_section_title{
+        font-size:15px;
+    }
+    .starSim_item{
+        width:68px;
+        height:68px;
+        border-radius: 7px;
+    }
+    .starSim_item img{
+        width:40px;
+    }
+    
+} 
+
+
+@media ( max-width: 310px ){
+    .starSim_item_stars > div{
+        margin: 0 3px;
+    }
+    .starSim_item_star{
+        width:11px;
+        height:11px;
+        margin:0 0.5px;
+
+    }
+}

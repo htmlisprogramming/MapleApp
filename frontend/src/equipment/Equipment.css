@@ -1,0 +1,66 @@
+.equip_tab{
+    display: inline-block;
+
+    /* background-color: red; */
+    width:210px;
+    height:252px;
+}
+.equip_column{
+    display: block;
+    width:42px;
+    height:252px;
+    float:left;
+    /* background-color: red; */
+}
+.equip_icon{
+    float: left;
+    width:38px;
+    height:38px;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    margin:1px;
+    position:relative; 
+}
+.equip_icon.blank{
+    width:40px;
+    height:40px;
+    background:#000;
+    opacity: 0.6;
+    border: none;
+}
+
+.equip_icon img{
+    display:block;
+    position:absolute; 
+    left:0; right:0; top:0; bottom:0; margin:auto;
+}
+
+.equip_icon div{
+    background-color: red;
+    /* position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+}
+.equip_icon span{
+    zoom:90%;
+    text-align: left;
+    font-family : "NanumBarunpen";
+    position:absolute; 
+    /* letter-spacing :-0.5px; */
+    top:0;
+    left:0;
+    margin: 2px 2px;
+    font-size:10px;
+    line-height: 9px;
+    color:#bbb;
+}
+.equip_select{
+    display: inline-block;
+    width:300px;
+    height:300px;
+    background-color: red;
+}
